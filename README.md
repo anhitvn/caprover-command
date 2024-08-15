@@ -1,5 +1,10 @@
 # Tổng hợp các command thường dùng.
 
+OS đã setup thành công:
+- Ubuntu: 20.04, 22.04, 24.04
+- Debian: 10 (buster), 11 (bullseye)
+- CentOS: 7
+
 ### UFW allow
 ```
 ufw allow 80,443,3000,996,7946,4789,2377/tcp; ufw allow 7946,4789,2377/udp;

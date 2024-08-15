@@ -16,6 +16,11 @@ docker run -p 80:80 -p 443:443 -p 3000:3000 -e ACCEPTED_TERMS=true -v /var/run/d
 ```
 Đây chỉ là command setup cơ bản
 
+### Caprover restart
+```
+docker service update captain-captain --force
+```
+
 ### Caprover remove
 Try this
 ```
@@ -24,4 +29,16 @@ docker service rm $(docker service ls -q)
 then
 ```
 docker swarm leave --force
+```
+
+### Check logs caprover
+
+Lệnh cơ bản
+```
+docker service logs captain-captain --since 60m
+```
+
+Chekc my application's logs
+```
+docker service logs srv-captain--my-app --since 60m --follow
 ```
